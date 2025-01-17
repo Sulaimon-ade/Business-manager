@@ -1,0 +1,62 @@
+[debug] [2024-10-18T08:29:49.524Z] ----------------------------------------------------------------------
+[debug] [2024-10-18T08:29:49.528Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ogazi.c.s\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2024-10-18T08:29:49.528Z] CLI Version:   13.22.1
+[debug] [2024-10-18T08:29:49.528Z] Platform:      win32
+[debug] [2024-10-18T08:29:49.528Z] Node Version:  v20.17.0
+[debug] [2024-10-18T08:29:49.529Z] Time:          Fri Oct 18 2024 09:29:49 GMT+0100 (West Africa Standard Time)
+[debug] [2024-10-18T08:29:49.529Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-18T08:29:49.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-18T08:29:49.539Z] > authorizing via signed-in user (chidiebubeogazi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ogazi.c.s\Desktop\business-app-clean
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-10-18T08:37:59.866Z] Checked if tokens are valid: true, expires at: 1729243760186
+[debug] [2024-10-18T08:37:59.867Z] Checked if tokens are valid: true, expires at: 1729243760186
+[debug] [2024-10-18T08:37:59.868Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-10-18T08:37:59.869Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"greencard-business-app","name":"business-app"}
+[debug] [2024-10-18T08:38:01.324Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-10-18T08:38:01.325Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.8014822022695455678"}
+[debug] [2024-10-18T08:38:01.327Z] Checked if tokens are valid: true, expires at: 1729243760186
+[debug] [2024-10-18T08:38:01.327Z] Checked if tokens are valid: true, expires at: 1729243760186
+[debug] [2024-10-18T08:38:01.328Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8014822022695455678 [none]
+[debug] [2024-10-18T08:38:02.332Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8014822022695455678 200
+[debug] [2024-10-18T08:38:02.332Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8014822022695455678 {"name":"operations/cp.8014822022695455678"}
+[debug] [2024-10-18T08:38:02.846Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-10-18T08:38:02.847Z] Checked if tokens are valid: true, expires at: 1729243760186
+[debug] [2024-10-18T08:38:02.847Z] Checked if tokens are valid: true, expires at: 1729243760186
+[debug] [2024-10-18T08:38:02.848Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8014822022695455678 [none]
+[debug] [2024-10-18T08:38:03.320Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8014822022695455678 200
+[debug] [2024-10-18T08:38:03.321Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8014822022695455678 {"name":"operations/cp.8014822022695455678","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-10-18T08:38:04.327Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-10-18T08:38:04.329Z] Checked if tokens are valid: true, expires at: 1729243760186
+[debug] [2024-10-18T08:38:04.329Z] Checked if tokens are valid: true, expires at: 1729243760186
+[debug] [2024-10-18T08:38:04.330Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8014822022695455678 [none]
+[debug] [2024-10-18T08:38:04.894Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8014822022695455678 200
+[debug] [2024-10-18T08:38:04.895Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8014822022695455678 {"name":"operations/cp.8014822022695455678","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"861134725467","projectId":"greencard-business-app","lifecycleState":"ACTIVE","name":"business-app","createTime":"2024-10-18T08:39:26.820324Z"}}
+[debug] [2024-10-18T08:38:04.901Z] Checked if tokens are valid: true, expires at: 1729243760186
+[debug] [2024-10-18T08:38:04.902Z] Checked if tokens are valid: true, expires at: 1729243760186
+[debug] [2024-10-18T08:38:04.903Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/greencard-business-app:addFirebase [none]
+[debug] [2024-10-18T08:38:18.002Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/greencard-business-app:addFirebase, {"headers":{},"method":"POST","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/greencard-business-app:addFirebase failed, reason: socket hang up
+[debug] [2024-10-18T08:38:18.003Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/greencard-business-app:addFirebase
+[debug] [2024-10-18T08:38:18.432Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/greencard-business-app:addFirebase
+    at RetryOperation._fn (C:\Users\ogazi.c.s\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
